@@ -23,7 +23,7 @@ const Hero = () => {
                     <p className='text-lg text-gray-300 mb-8 '>Fresher DevOps Engineer eager to implement automation and scalable cloud solutions.</p>
                     <div className='flex space-x-4'>
                         <a href="#Projects" className='px-6 py-3 bg-purple rounded-lg font-medium hover:bg-purple-700 transition duration-300'>View Work</a>
-                        <a href="#Contact" className='px-6 py-3 border border-purple rounded-lg font-medium hover:bg-purple/20 transition decoration-purple-300'>Contract Me</a>
+                        <a href="#Contact" className='px-6 py-3 border border-purple rounded-lg font-medium hover:bg-purple/20 transition decoration-purple-300'>Contact Me</a>
                     </div>
                 </div>
 
