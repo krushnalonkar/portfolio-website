@@ -113,7 +113,7 @@ export const projects = [
     title: "Portfolio Website",
     description: "A personal portfolio to showcase projects, skills, and blogs with dark/light mode support.",
     image: projectImg4,
-    tech: ["Next.js", "Tailwind CSS", "Framer Motion", "Markdown"],
+    tech: ["React.js", "Tailwind CSS", "Framer Motion", "EmailJS Service"],
     icons: [FaReact, FaCloud],
     demo: "#",
     code: "#",
