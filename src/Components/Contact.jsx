@@ -1,8 +1,29 @@
+import emailjs from '@emailjs/browser'
+import { useRef } from 'react'
 import { motion as Motion } from 'framer-motion'
 import React from 'react'
 import { FaEnvelope, FaMapMarkerAlt, FaPhone, FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa'
 
 const Contact = () => {
+    const form = useRef();
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            "service_2h7jqi4",
+            "template_oq4r1wi",
+            form.current,
+            "aU1U2jm8C1ij_bcGK"
+        )
+            .then(() => {
+                alert("Message Sent Successfully ✅");
+            })
+            .catch((error) => {
+                console.log(error);
+                alert("Failed to send message ❌");
+            });
+    };
+
     return (
         <Motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -19,20 +40,20 @@ const Contact = () => {
 
                     {/* Contact form */}
                     <div>
-                        <form className='space-y-6'>
+                        <form ref={form} onSubmit={handleSubmit} className='space-y-6'>
                             <div>
                                 <label htmlFor="name" className='block text-gray-300 mb-2'>Your Name</label>
-                                <input className='w-full bg-dark-300 border border-dark-400 rounded-lg px-4 py-3 outline-none' type="text" />
+                                <input className='w-full bg-dark-300 border border-dark-400 rounded-lg px-4 py-3 outline-none' type="text" name='user_name'/>
                             </div>
 
                             <div>
                                 <label htmlFor="email" className='block text-gray-300 mb-2'>Email Address</label>
-                                <input className='w-full bg-dark-300 border border-dark-400 rounded-lg px-4 py-3 outline-none' type="email" />
+                                <input className='w-full bg-dark-300 border border-dark-400 rounded-lg px-4 py-3 outline-none' type="email" name='user_email'/>
                             </div>
 
                             <div>
                                 <label htmlFor="message" className='block text-gray-300 mb-2'>Your Message</label>
-                                <textarea className='w-full h-30 bg-dark-300 border border-dark-400 rounded-lg px-4 py-3 outline-none' type="text" />
+                                <textarea className='w-full h-30 bg-dark-300 border border-dark-400 rounded-lg px-4 py-3 outline-none' type="text" name='message'/>
                             </div>
                             <button type="submit" className='w-full px-6 py-3 bg-purple rounded-lg font-medium hover:bg-purple-700 transition duration-300 cursor-pointer'>Send</button>
                         </form>
