@@ -124,8 +124,8 @@ export const projects = [
     image: project2,
     tech: ["ReactJS", "axios (API Integration)", "CSS",],
     icons: [FaReact, FaNodeJs, FaDatabase ],
-    demo: "#",
-    code: "#",
+    demo: "https://krushnalonkar.github.io/CURD-OPRATION/",
+    code: "https://github.com/krushnalonkar/CURD-OPRATION.git",
   },
   {
     title: "AI Image Generator",
