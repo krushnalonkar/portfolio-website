@@ -115,8 +115,8 @@ export const projects = [
     image: projectImg4,
     tech: ["React.js", "Tailwind CSS", "Framer Motion", "EmailJS Service"],
     icons: [FaReact, FaCloud],
-    demo: "#",
-    code: "#",
+    demo: "https://krushnalonkar.github.io/portfolio-website/",
+    code: "https://github.com/krushnalonkar/portfolio-website.git",
   },
   {
     title: "CURD Operation Reactjs",
