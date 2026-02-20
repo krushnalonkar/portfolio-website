@@ -61,6 +61,7 @@ const Resume = () => {
                                 <a
                                     href="KrushnaCV.pdf"
                                     download=""
+                                    target="_blank" rel="noopener noreferrer"
                                     className="flex items-center justify-center gap-3 px-7 py-3 border border-purple text-purple rounded-xl hover:bg-purple hover:text-white hover:scale-105 transition duration-300"
                                 >
                                     <FaDownload /> Download Resume
