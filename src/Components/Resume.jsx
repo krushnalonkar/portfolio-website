@@ -31,7 +31,7 @@ const Resume = () => {
                     <div className="flex justify-center">
                         <div className="relative group">
                             <img
-                                src="/resumeimg.webp"
+                                src="resumeimg.webp"
                                 alt="Resume Preview"
                                 className="w-60 md:w-72 rounded-2xl shadow-2xl border border-purple/30 group-hover:scale-105 transition duration-500"
                             />
