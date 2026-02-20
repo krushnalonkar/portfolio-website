@@ -50,7 +50,7 @@ const Resume = () => {
                             <div className="flex flex-col sm:flex-row gap-5 justify-center md:justify-start">
 
                                 <a
-                                    href="/ResumePreiew.png"
+                                    href="ResumePreiew.png"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="flex items-center justify-center gap-3 px-7 py-3 bg-purple text-white rounded-xl shadow-lg hover:bg-purple/80 hover:scale-105 transition duration-300"
@@ -59,7 +59,7 @@ const Resume = () => {
                                 </a>
 
                                 <a
-                                    href="/KrushnaCV.pdf"
+                                    href="KrushnaCV.pdf"
                                     download=""
                                     className="flex items-center justify-center gap-3 px-7 py-3 border border-purple text-purple rounded-xl hover:bg-purple hover:text-white hover:scale-105 transition duration-300"
                                 >
